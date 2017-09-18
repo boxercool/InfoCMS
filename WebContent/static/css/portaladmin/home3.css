@@ -1,0 +1,78 @@
+body {
+
+	font-family:Foobar Pro;
+
+	font-size: 30px;
+
+	}
+
+
+#accordion1 {
+	list-style: none;
+	padding: 0 0 0 0;
+	/* width: 170px; */
+	width:140px;
+}
+#accordion1 li{
+	display: block;
+	background-color: #DAE9BC;          /*#eee;*/
+	font-weight: bold;
+	margin: 1px;
+	cursor: pointer;
+	padding: 5 5 5 7px;
+	list-style: circle;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+#accordion1 ul {
+	list-style: none;
+	padding: 0 0 0 0;
+	display: none;
+}
+
+#accordion1 ul li{
+	font-weight: normal;
+	cursor: auto;
+	background-color:#DAE9BC;         /* #fff;*/
+	padding: 0 0 0 7px;
+	text-align:left;
+}
+
+
+#accordion1 a {
+	text-decoration: none;
+	
+}
+
+#accordion1 a:hover {
+	text-decoration: underline;
+}
+
+ .right 
+{
+    text-align:right;
+    float: right;
+}
+.center
+{
+text-align:center;
+float:center;
+}
+.button {
+    display: block;
+    width: 115px;
+    height: 25px;
+    background: #ccccc;                            /* background: #4E9CAF;
+                                                   padding: 10px; */
+   /*  text-align: center;*/
+    border-radius:2px;
+    color: white;
+    font-size:32px;
+    font-weight: bold;
+}
+
+.my-class {
+  text-align: center;
+}
+ 

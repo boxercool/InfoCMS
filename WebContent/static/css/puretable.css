@@ -1,0 +1,79 @@
+ .table2
+{
+   width:87%;
+   font-family: sans-serif;
+   /*  table-layout:fixed; */
+  /*  overflow:hidden; */
+  /*  white-space: nowrap; */
+  /*  text-overflow: ellipsis; */
+}
+
+
+ [type=text]{
+ margin: 0px 0px 0px;
+ }
+
+#f1{font-size:18px;}
+
+.table2 tbody{border:1px solid black}
+.table2,table1{border-collapse:collapse;border-spacing:0}
+.table2 tr{empty-cells:show;border:1px solid #cbcbcb;border: 1px solid black}
+.table2 caption{color:#000;font:italic 85%/1 arial,sans-serif;padding:1em 0;text-align:center}
+.table2 td,.table2 th{border-left:1px solid #cbcbcb;border-width:0 0 0 1px;font-size:inherit;margin:0;padding:.5em 1em;valign:baseline;word-wrap:break-word}
+.table2 td:first-child,.table2 th:first-child{border-left-width:0;valign:baseline;word-wrap:break-word}
+.table2 thead{background-color:#e0e0e0;color:#000;text-align:left;vertical-align:bottom;border: 1px solid black}
+.table2 td{background-color:transparent;word-wrap:break-word}
+.table2 tbody tr:nth-child(even) {background-color:#f1f1f1;word-wrap:break-word}
+.table2-odd td,.table2-striped tr:nth-child(2n-1) td{background-color:#f2f2f2;word-wrap:break-word}
+.table2-bordered td{border-bottom:1px solid #cbcbcb}
+.table2-bordered tbody>tr:last-child>td{border-bottom-width:0}
+.table2-horizontal td,.table2-horizontal th{border-width:0 0 1px;border-bottom:1px solid #cbcbcb}
+.table2-horizontal tbody>tr:last-child>td{border-bottom-width:0}
+ 
+.b1 {
+    padding: 1px 6px;
+    }
+
+.b1 {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    background-color: buttonface;
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    font-size:12px;
+}
+.b1 {
+    -webkit-writing-mode: horizontal-tb;
+}
+
+.b1 {
+    -webkit-appearance: button;
+}
+button,input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+
+/*.table2 td,th{border-width:0 0 0 1px;font-size:inherit;margin:0;overflow:visible;padding:.5em 1em}  
+.table2 td:first-child,.table2 th:first-child{border-left-width:0} 
+.table2 thead{background-color:#e0e0e0;color:#000;text-align:left;vertical-align:bottom;border:1px solid black}  
+.table2 td{background-color:transparent}.table2-odd td{background-color:#f2f2f2}   
+.table2-striped tr:nth-child(2n-1) td{background-color:#f2f2f2} 
+.table2-bordered td{border-bottom:1px solid black}  
+.table2-bordered tbody>tr:last-child>td{border-bottom-width:0} 
+.table2-horizontal td,.table2-horizontal th{border-width:0 0 1px} 
+.table2-horizontal tbody>tr:last-child>td{border-bottom-width:0}  
+ */
+

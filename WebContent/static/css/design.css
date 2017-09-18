@@ -1,0 +1,229 @@
+	body {
+			min-width: 630px;
+			margin: 0;
+			padding: 0;
+			font: 15px/1'Trebuchet MS','Lucida Sans';
+			line-height: 1.5em;
+		 }
+
+		#container {
+			padding-left: 129px;
+			padding-right: 200px;
+		}
+		
+		#container .column {
+			position: relative;
+			float: left;
+		}
+		
+		#center {
+			padding: 10px 20px;
+			width: 100%;
+		}
+		
+		#left {
+			width: 210px;
+			padding: 0 10px;
+			right: 129px;
+			margin-left: -100%;
+		}
+		
+		#right {
+			width: 200px;
+			padding: 108 10px;
+			margin-right: -218%;
+		}
+		
+		#footer {
+			clear: both;
+		}
+		
+		#article{
+		  /*  width:1038; */
+		   width:102%;
+		}
+		
+	
+		*html #left {
+			left: 150px;
+		}
+
+		
+		#container {
+			overflow: hidden;
+		}
+
+		#container .column {
+			padding-bottom: 1001em;
+			margin-bottom: -1000em;
+		}
+
+		/* Fix for the footer */
+		* html body {
+			overflow: hidden;
+		}
+		
+		* html #footer-wrapper {
+			float: left;
+			position: relative;
+			width: 100%;
+			padding-bottom: 10010px;
+			margin-bottom: -10000px;
+			background: #fff;
+		}
+
+		
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		nav ul a {
+			color: black;
+			text-decoration: none;
+		}
+
+		#header, #footer {
+			font-size: large;
+			padding: 0.3em;
+			background: #BCCE98;
+		}
+
+		#left {
+			background: #DAE9BC;                      
+		}
+		
+		#right {
+			background: #DAE9BC;
+		}
+
+		#center {
+			background: #fff;
+		}
+
+		#container .column {
+			padding-top: 1em;
+		}
+<!----------------------------------------------------------------home1.css--------------------------------------->	
+section 
+{
+	 display: block; 
+} 
+
+.accordion2
+{
+	background-color:#DAE9BC;              
+	width: 165px;
+	margin: 5px auto;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow: 0 1px 0 #999;	
+}
+
+.accordion2 section 
+{
+ 	border-bottom: 1px solid #c0c0c0;
+	margin: 5px;
+	background-color: #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+    background-image: -webkit-linear-gradient(top, #fff, #eee);
+    background-image: -moz-linear-gradient(top, #fff, #eee);
+    background-image: -ms-linear-gradient(top, #fff, #eee);
+    background-image: -o-linear-gradient(top, #fff, #eee);
+    background-image: linear-gradient(top, #fff, #eee);
+  	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.accordion2 h2 a
+{
+	display: block;
+	position: relative;
+	font: 15px/1'Trebuchet MS','Lucida Sans';
+	color: #030115;
+	text-decoration: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	text-align:left;
+}
+
+<!------------------------------------------------home3------------------------------------------------------------->
+#accordion1 {
+	list-style: none;
+	padding: 0 0 0 0;
+	width:140px;
+}
+#accordion1 li{
+	display: block;
+	background-color: #DAE9BC;          
+	font-weight: bold;
+	margin: 1px;
+	cursor: pointer;
+	padding: 5 5 5 7px;
+	list-style: circle;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+#accordion1 ul {
+	list-style: none;
+	padding: 0 0 0 0;
+	display: none;
+}
+
+#accordion1 ul li{
+	font-weight: normal;
+	cursor: auto;
+	background-color:#DAE9BC;       
+	padding: 0 0 0 7px;
+	text-align:left;
+}
+
+
+#accordion1 a {
+	text-decoration: none;
+	
+}
+
+#accordion1 a:hover {
+	text-decoration: underline;
+}
+
+ .right 
+{
+    text-align:right;
+    float: right;
+}
+.center
+{
+text-align:center;
+float:center;
+}
+.button1 {
+    display: block;
+    width: 115px;
+    height: 25px;
+    background: #ccccc;               
+    border-radius:2px;
+    color: white;
+    font-size:32px;
+    font-weight: bold;
+}
+ <!---------------------------------------------------------------------------------------------------------->
+.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.fa-li.fa-lg{left:-1.85714286em}
+.fa-spinner:before{content:"\f110"}
+.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}
+.fa-fw{width:1.28571429em;text-align:center}
+.fa-1x{font-size:1em}
+.fa-ul{padding-left:0;margin-left:2.14285714em;list-style-type:none}
+.fa-ul>li{position:relative}
+.fa-li{position:absolute;left:-2.14285714em;width:2.14285714em;top:.14285714em;text-align:center}
+.fa-pull-left{float:left}
+.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite sts(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
+<!------------------------------------------------------------------------------------------------------------------>
+
+ 

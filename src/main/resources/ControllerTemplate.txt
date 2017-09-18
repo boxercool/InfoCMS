@@ -1,0 +1,97 @@
+package config;
+!{packageName}.web;
+
+import java.util.*;
+import javax.servlet.ServletRequest;
+import javax.validation.Valid;
+import $!{packageName}.service.*;
+import $!{packageName}.entity.*;
+import net.top.common.BasicController;
+import net.top.common.Servlets;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+/**
+ * $!{domainName}Action
+ * $Id: $!{domainName}Action.java,v 0.0.1 $!{nowTime}  $
+ */
+@Controller
+@RequestMapping(value = "/$!{bealowerNmae}")
+public class $!{domainName}Controller extends BasicController {
+    
+
+    @Autowired
+    private $!{domainName}Service $!{bealowerNmae}Service;
+	
+	@RequestMapping(value = "")
+    public String list(@RequestParam(value = "sortType", defaultValue = "auto") String sortType,
+            @RequestParam(value = "page", defaultValue = "1") int pageNumber, Model model, ServletRequest request) {
+        Map<String, Object> searchParams = Servlets.getParametersStartingWith(request, "search_");
+        Page<$!{domainName}> $!{bealowerNmae}s = $!{bealowerNmae}Service.getAll$!{domainName}(searchParams, pageNumber, PAGE_SIZE, sortType);
+        model.addAttribute("$!{bealowerNmae}", $!{bealowerNmae}s);
+        model.addAttribute("searchParams", Servlets.encodeParameterStringWithPrefix(searchParams, "search_"));
+		model.addAttribute("deletePath", "/$!{bealowerNmae}/delete");
+
+        return "$!{bealowerNmae}/$!{bealowerNmae}List";
+    }
+
+	 @RequestMapping(value = "create", method = RequestMethod.GET)
+	    public String createForm(Model model) {
+	        model.addAttribute("$!{bealowerNmae}", new $!{domainName}());
+	        model.addAttribute("action", "create");
+	        return "$!{bealowerNmae}/$!{bealowerNmae}Form";
+	    }
+	
+	 @RequestMapping(value = "create", method = RequestMethod.POST)
+	    public String create(@Valid $!{domainName} $!{bealowerNmae}, RedirectAttributes redirectAttributes) {
+	     $!{bealowerNmae}Service.save($!{bealowerNmae});
+	        redirectAttributes.addFlashAttribute("message", "ä¿¡æ?¯æ·»åŠ æˆ?åŠŸ");
+	        return "redirect:/$!{bealowerNmae}";
+	    }
+	 
+	
+	 @RequestMapping(value = "update/{id}", method = RequestMethod.GET)
+	    public String updateForm(@PathVariable("id") Long id, Model model) {
+	        model.addAttribute("$!{bealowerNmae}", $!{bealowerNmae}Service.get(id));
+	        model.addAttribute("action", "update");
+	        return "$!{bealowerNmae}/$!{bealowerNmae}Form";
+	    }
+	 
+	 @RequestMapping(value = "update", method = RequestMethod.POST)
+	    public String update(@Valid @ModelAttribute("preload$!{domainName}") $!{domainName} $!{bealowerNmae},
+	            RedirectAttributes redirectAttributes) {
+	     $!{bealowerNmae}Service.save($!{bealowerNmae});
+	        redirectAttributes.addFlashAttribute("message", "ä¿¡æ?¯æ›´æ–°æˆ?åŠŸ");
+	        return "redirect:/$!{bealowerNmae}";
+	    }
+	 
+	 @RequestMapping(value = "delete", method = RequestMethod.POST)
+	    public String delete(@RequestParam(value = "ids") List<Long> ids,RedirectAttributes redirectAttributes,
+	            ServletRequest request) throws Exception {
+	     $!{bealowerNmae}Service.delete(ids);
+	        return "redirect:/$!{bealowerNmae}";
+	    }
+	 
+	 @RequestMapping(value = "view/{id}", method = RequestMethod.GET)
+	    public String view(@PathVariable("id") Long id, Model model) {
+         model.addAttribute("$!{bealowerNmae}", $!{bealowerNmae}Service.get(id));
+         return "$!{bealowerNmae}/$!{bealowerNmae}View";
+	    }
+	 
+	 
+	   @ModelAttribute("preload$!{domainName}")
+	    public $!{domainName} get$!{domainName}(@RequestParam(value = "id", required = false) Long id) {
+	        if (id != null) {
+	            return $!{bealowerNmae}Service.get(id);
+	        }
+	        return null;
+	    }
+
+}

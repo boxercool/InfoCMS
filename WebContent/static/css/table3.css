@@ -1,0 +1,51 @@
+.table3
+{
+   width:50%;
+   font-family: sans-serif;
+   
+}
+#f1{font-size:18px;}
+.table3 tbody{border:1px solid black}
+.table3,table1{border-collapse:collapse;border-spacing:0}
+.table3 tr{empty-cells:show;border:1px solid #cbcbcb;border: 1px solid black}
+.table3 caption{color:#000;font:italic 85%/1 arial,sans-serif;padding:1em 0;text-align:center}
+.table3 td,.table3 th{border-left:1px solid #cbcbcb;border-width:0 0 0 1px;font-size:inherit;margin:0;overflow:visible;padding:.5em 1em;valign:baseline}
+.table3 td:first-child,.table3 th:first-child{border-left-width:0;valign:baseline}
+.table3 thead{background-color:#e0e0e0;color:#000;text-align:left;vertical-align:bottom;border: 1px solid black}
+.table3 td{background-color:transparent}
+.table3 tbody tr:nth-child(even) {background-color:#f1f1f1}
+.table3-odd td,.table3-striped tr:nth-child(2n-1) td{background-color:#f2f2f2}
+.table3-bordered td{border-bottom:1px solid #cbcbcb}
+.table3-bordered tbody>tr:last-child>td{border-bottom-width:0}
+.table3-horizontal td,.table3-horizontal th{border-width:0 0 1px;border-bottom:1px solid #cbcbcb}
+.table3-horizontal tbody>tr:last-child>td{border-bottom-width:0}
+
+.b1 {
+    padding: 1px 6px;
+    }
+
+.b1 {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    background-color: buttonface;
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    font-size:12px;
+}
+.b1 {
+    -webkit-writing-mode: horizontal-tb;
+}
+
+.b1 {
+    -webkit-appearance: button;
+}
